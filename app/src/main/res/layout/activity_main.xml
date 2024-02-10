@@ -12,8 +12,9 @@
         android:id="@+id/llGameInfo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="?attr/colorSecondaryVariant"
+        android:background="#000000"
         android:orientation="horizontal"
+        android:padding="2dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -21,6 +22,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_margin="5dp"
             android:layout_weight="1"
             app:cardCornerRadius="8dp">
 
@@ -28,9 +30,9 @@
                 android:id="@+id/tvNumMoves"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="10dp"
+                android:layout_margin="8dp"
                 android:gravity="center"
-                android:padding="8dp"
+                android:padding="6dp"
                 android:text="Moves: 0"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
         </androidx.cardview.widget.CardView>
@@ -38,6 +40,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:layout_weight="1"
             app:cardCornerRadius="8dp">
 
@@ -45,9 +48,9 @@
                 android:id="@+id/tvNumPairs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="10dp"
+                android:layout_margin="8dp"
                 android:gravity="center"
-                android:padding="8dp"
+                android:padding="6dp"
                 android:text="Pairs: 0 / 4"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
         </androidx.cardview.widget.CardView>
@@ -57,9 +60,13 @@
         android:id="@+id/rvBoard"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         android:layout_weight="1"
+        android:overScrollMode="never"
         app:layout_constraintBottom_toTopOf="@+id/llGameInfo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
